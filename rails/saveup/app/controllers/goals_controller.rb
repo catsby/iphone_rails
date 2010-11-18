@@ -7,6 +7,7 @@ class GoalsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @goals }
+      format.json { render :json => @goals }
     end
   end
 
@@ -18,6 +19,7 @@ class GoalsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @goal }
+      format.json { render :json => @goal }
     end
   end
 
@@ -29,6 +31,7 @@ class GoalsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @goal }
+      format.json { render :json => @goal }
     end
   end
 
@@ -45,10 +48,12 @@ class GoalsController < ApplicationController
     respond_to do |format|
       if @goal.save
         format.html { redirect_to(@goal, :notice => 'Goal was successfully created.') }
-        format.xml  { render :xml => @goal, :status => :created, :location => @goal }
+        format.xml  { render :xml  => @goal, :status => :created, :location => @goal }
+        format.json { render :json => @goal, :status => :created, :location => @goal }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @goal.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml  => @goal.errors, :status => :unprocessable_entity }
+        format.json { render :json => @goal.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -61,10 +66,12 @@ class GoalsController < ApplicationController
     respond_to do |format|
       if @goal.update_attributes(params[:goal])
         format.html { redirect_to(@goal, :notice => 'Goal was successfully updated.') }
-        format.xml  { head :ok }
+        format.xml  { render :xml  => @goal, :status => 200 }
+        format.json { render :json => @goal, :status => 200 }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @goal.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml  => @goal.errors, :status => :unprocessable_entity }
+        format.json { render :json => @goal.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -77,7 +84,8 @@ class GoalsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(goals_url) }
-      format.xml  { head :ok }
+      format.xml  { render :xml  => @goal, :status => 200 }
+      format.json { render :json => @goal, :status => 200 }
     end
   end
 end
