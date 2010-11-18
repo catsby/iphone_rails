@@ -1,0 +1,158 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* SaveUpAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 408}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 467}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* SaveUp */ = {
+		activeExec = 0;
+		executables = (
+			F42807EF129568F400CA6D0C /* SaveUp */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* GoalsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 820}}";
+			sepNavSelRange = "{310, 0}";
+			sepNavVisRange = "{0, 317}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* GoalsViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{3658, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{3709, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{3759, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4473}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1401, 2366}}";
+			sepNavSelRange = "{2137, 0}";
+			sepNavVisRange = "{644, 262}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F42807EF129568F400CA6D0C /* SaveUp */;
+		activeSDKPreference = iphonesimulator4.1;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* SaveUp */;
+		codeSenseManager = F4280801129568F700CA6D0C /* Code sense */;
+		executables = (
+			F42807EF129568F400CA6D0C /* SaveUp */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					10,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 311781620;
+			PBXWorkspaceStateSaveDate = 311781620;
+		};
+		perUserProjectItems = {
+			F428080F1295698F00CA6D0C /* PBXTextBookmark */ = F428080F1295698F00CA6D0C /* PBXTextBookmark */;
+			F428081E129569D500CA6D0C /* PBXTextBookmark */ = F428081E129569D500CA6D0C /* PBXTextBookmark */;
+			F428082712956C4900CA6D0C /* PBXTextBookmark */ = F428082712956C4900CA6D0C /* PBXTextBookmark */;
+			F428083312956D2F00CA6D0C /* PBXTextBookmark */ = F428083312956D2F00CA6D0C /* PBXTextBookmark */;
+		};
+		sourceControlManager = F4280800129568F700CA6D0C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	F42807EF129568F400CA6D0C /* SaveUp */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SaveUp;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	F4280800129568F700CA6D0C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F4280801129568F700CA6D0C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F428080F1295698F00CA6D0C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* SaveUpAppDelegate.h */;
+		name = "SaveUpAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 467;
+		vrLoc = 0;
+	};
+	F428081E129569D500CA6D0C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* GoalsViewController.m */;
+		name = "GoalsViewController.m: 11";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 576;
+		vrLoc = 0;
+	};
+	F428082712956C4900CA6D0C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* GoalsViewController.h */;
+		name = "GoalsViewController.h: 15";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 317;
+		vrLoc = 0;
+	};
+	F428083312956D2F00CA6D0C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* GoalsViewController.m */;
+		name = "GoalsViewController.m: 90";
+		rLen = 0;
+		rLoc = 2137;
+		rType = 0;
+		vrLen = 1744;
+		vrLoc = 644;
+	};
+}
