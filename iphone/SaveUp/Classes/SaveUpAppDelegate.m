@@ -7,7 +7,7 @@
 //
 
 #import "SaveUpAppDelegate.h"
-#import "RootViewController.h"
+#import "GoalsViewController.h"
 
 
 @implementation SaveUpAppDelegate

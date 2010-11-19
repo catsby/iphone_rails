@@ -21,6 +21,7 @@
 		F40067FA1296BA7600FB1EFE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F40067F21296BA7600FB1EFE /* SBJsonBase.m */; };
 		F40067FB1296BA7600FB1EFE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F40067F41296BA7600FB1EFE /* SBJsonParser.m */; };
 		F40067FC1296BA7600FB1EFE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F40067F61296BA7600FB1EFE /* SBJsonWriter.m */; };
+		F40068001296BAD400FB1EFE /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = F40067FF1296BAD400FB1EFE /* Goal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		F40067F41296BA7600FB1EFE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		F40067F51296BA7600FB1EFE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		F40067F61296BA7600FB1EFE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F40067FE1296BAD400FB1EFE /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		F40067FF1296BAD400FB1EFE /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F40067FD1296BAC900FB1EFE /* Models */,
 				F40067E71296BA6100FB1EFE /* JSON Framework */,
 				28C286DF0D94DF7D0034E888 /* GoalsViewController.h */,
 				28C286E00D94DF7D0034E888 /* GoalsViewController.m */,
@@ -147,6 +151,15 @@
 			name = "JSON Framework";
 			sourceTree = "<group>";
 		};
+		F40067FD1296BAC900FB1EFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F40067FE1296BAD400FB1EFE /* Goal.h */,
+				F40067FF1296BAD400FB1EFE /* Goal.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +231,7 @@
 				F40067FA1296BA7600FB1EFE /* SBJsonBase.m in Sources */,
 				F40067FB1296BA7600FB1EFE /* SBJsonParser.m in Sources */,
 				F40067FC1296BA7600FB1EFE /* SBJsonWriter.m in Sources */,
+				F40068001296BAD400FB1EFE /* Goal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
