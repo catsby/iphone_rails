@@ -26,7 +26,7 @@
 	return self;
 }
 
-+ (NSArray *)findAllRemote
++ (NSMutableArray *)findAllRemote
 {
 	NSURL *url = [NSURL URLWithString:@"http://localhost:3000/goals.json"];
 	
@@ -35,7 +35,6 @@
 	NSString *jsonString = [NSString stringWithContentsOfURL:url
 													encoding:NSUTF8StringEncoding
 													   error:&error];
-	NSLog(@"jsonString:\n%@", jsonString);
 	NSMutableArray *goals = [NSMutableArray array];
 	if (jsonString) {
 		SBJSON *json = [[SBJSON alloc] init];
@@ -43,13 +42,14 @@
 		[json release];
 		
 		for (NSDictionary *dictionary in results) {
-			Goal *goal = [[Goal alloc] initWithDictionary:dictionary];
+			Goal *goal = [[Goal alloc] initWithDictionary:[dictionary valueForKey:@"goal"]];
 			[goals addObject:goal];
 			[goal release];
 		}
 	}
 	return goals;
 }
+
 
 - (void) dealloc
 {

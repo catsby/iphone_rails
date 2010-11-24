@@ -25,6 +25,5 @@
 @property (nonatomic, retain) NSDate *updatedAt;
 
 - (id) initWithDictionary:(NSDictionary *)dictionary;
-+ (NSArray *)findAllRemote;
-
++ (NSMutableArray *)findAllRemote;
 @end
