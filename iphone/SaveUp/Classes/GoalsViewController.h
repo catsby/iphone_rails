@@ -1,18 +1,11 @@
-//
-//  GoalsViewController.h
-//  SaveUp
-//
-//  Created by Clint Shryock on 11/18/10.
-//  Copyright 2010 Cramer Development. All rights reserved.
-//
+#import "GoalAddViewController.h"
 
-#import <UIKit/UIKit.h>
-
-@interface GoalsViewController : UITableViewController {
-	NSMutableArray *goals;
+@interface GoalsViewController : UITableViewController <GoalChangeDelegate> {
+    NSMutableArray *goals;
 }
 
-@property (nonatomic, retain) NSMutableArray *goals;
+@property (nonatomic, retain) NSArray *goals;
 
-- (IBAction)refresh;
+- (IBAction)add;
+
 @end
