@@ -14,4 +14,5 @@
 
 @property (nonatomic, retain) NSMutableArray *goals;
 
+- (IBAction)refresh;
 @end

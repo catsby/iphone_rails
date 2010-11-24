@@ -7,6 +7,7 @@
 //
 
 #import "GoalsViewController.h"
+#import "Goal.h"
 
 
 @implementation GoalsViewController
@@ -25,9 +26,13 @@
 	self.title = @"Goals";
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 	
-	NSMutableArray *data = [[NSMutableArray alloc] initWithObjects:@"iPad", @"Vacation", @"Donation", nil];
-	self.goals = data;
-	[data release];
+	UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+																				   target:self
+																				   action:@selector(refresh)];
+	self.navigationItem.rightBarButtonItem = refreshButton;
+	[refreshButton release];
+	
+	[self refresh];
 }
 
 /*
@@ -78,18 +83,32 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"GoalCellId";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
     
 	// Configure the cell.
-	NSString *goal = [goals objectAtIndex:indexPath.row];
-	cell.textLabel.text = goal;
+//	NSLog(@"goals: %@", self.goals);
+	Goal *goal = [self.goals objectAtIndex:indexPath.row];
+	NSLog(@"indexPath.row: %lu", indexPath.row);
+	NSLog(@"goal name: %@", goal.name);
+	NSLog(@"goal amount: %@", goal.amount);
+	cell.textLabel.text = goal.name;
+	cell.detailTextLabel.text = goal.amount;
 
     return cell;
+}
+
+#pragma mark actions
+- (IBAction)refresh
+{
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+	self.goals = [Goal findAllRemote];
+	[self.tableView reloadData];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 
