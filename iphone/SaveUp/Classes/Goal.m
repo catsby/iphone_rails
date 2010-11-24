@@ -68,4 +68,31 @@ static NSString *siteURL = @"http://localhost:3000";
     return [json stringWithObject:params error:nil];
 }
 
+- (void)createRemote
+{
+	NSString *url = [NSString stringWithFormat:@"%@/goals.json", siteURL];
+	[Resource post:[self params] to:url];
+}
+
+- (void)updateRemote
+{
+	NSString *url = [NSString stringWithFormat:@"%@/goals/%@.json", siteURL, self.goalId];
+	[Resource put:[self params] to:url];
+}
+
+- (void)saveRemote
+{
+	if (self.goalId == nil) {
+		[self createRemote];
+	} else {
+		[self updateRemote];
+	}
+}
+
+- (void)destroyRemote
+{
+	NSString *url = [NSString stringWithFormat:@"%@/goals/%@.json", siteURL, self.goalId];
+	[Resource delete:url];
+}
+
 @end

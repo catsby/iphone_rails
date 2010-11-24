@@ -88,7 +88,7 @@
 -(IBAction)save {
     goal.name = nameField.text;
     goal.amount = amountField.text;
-    // TODO: create or update remote goal
+	[goal saveRemote];
     [self.delegate didChangeGoal:goal];
     [self.navigationController popViewControllerAnimated:YES];
 }

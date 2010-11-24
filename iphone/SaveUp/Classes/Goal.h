@@ -15,5 +15,9 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 + (NSArray *)findAllRemote;
+- (void)createRemote;
+- (void)updateRemote;
+- (void)saveRemote;
+- (void)destroyRemote;
 
 @end

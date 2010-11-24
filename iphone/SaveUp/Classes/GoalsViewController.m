@@ -94,7 +94,7 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
     [tableView beginUpdates]; 
     if (editingStyle == UITableViewCellEditingStyleDelete) { 
         Goal *goal = [goals objectAtIndex:indexPath.row];
-        // TODO: destroy remote goal
+		[goal destroyRemote];
         [goals removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
                          withRowAnimation:UITableViewRowAnimationFade]; 
