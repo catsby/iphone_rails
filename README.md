@@ -1,0 +1,3 @@
+##iPhone / Rails tutorial
+
+This is a sample iPhone and Rails project that work together to create a to-do list.  This repository is my own code as I work through [Mike Clark's iPhone / Rails tutorial](https://github.com/clarkware/iphone-rails-tutorial).  I've also posted some small updates to that project on my own fork @ [ctshryock/iphone-rails-tutorial](https://github.com/ctshryock/iphone-rails-tutorial)
